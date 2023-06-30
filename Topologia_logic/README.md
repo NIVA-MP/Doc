@@ -56,44 +56,44 @@ Exemplo de nomenclatura:
         * NDR (aparentemente não funcional) (cluster com 003)
 
     * **vp2-seg-056**
-        * desativada
-        * antiga máquina que hospedava o AvantData virtual (sem appliance dedicado)
+        * Desativada
+        * Antiga máquina que hospedava o AvantData virtual (sem appliance dedicado)
 
 ### Outros sistemas relevantes
 
 * **vh2-seg-01 (10.34.223.195)**
-    * máquina de homologação AvantData
-    * desligada recentemente
-    * desativada por escaneamento interno de vuln do MP
-    * necessidade de realizar atualização do sistema (AvantSec)
+    * Máquina de homologação AvantData
+    * Desligada recentemente
+    * Desativada por escaneamento interno de vuln do MP
+    * Necessidade de realizar atualização do sistema (AvantSec)
 
 * **vp1-seg-19 (IP)**
     * Servidor do MP que armazena os backups da solução
 
 * **vp2-seg-033 (10.34.229.12)**
-    * máquina do Zabbix (4.4)
-    * manutenção nossa responsabilidade
-    * recebe dos agentes via SNMPv2
-    * monitoramento do ambiente cliente e AvantData
-    * agentes passivos
+    * Máquina do Zabbix (4.4)
+    * Manutenção nossa responsabilidade
+    * Recebe dos agentes via SNMPv2
+    * Monitoramento do ambiente cliente e AvantData
+    * Agentes passivos
     *  Atua como proxy e envia os dados recebidos por polling para o Zabbix-Server (172.20.0.6) no ambiente da Niva (Nome: Rússia)
         * Problema: incompatibildiade na versão do vh2-seg-01 e Zabbix-Server (Futuramente atualizar no MP)
 
 * **adc01 (10.34.239.101) e adc02 (10.34.239.102)**
-    * balanceadores de carga F5
+    * Balanceadores de carga F5
     * Enviam os logs para o VS (VirtualServer) que envia para o AvantData
         * VS atua na borda entre o F5 e um servidor externo realizando análises de segurança nos dados enviados
         * Após análise encaminha 
-        * entidades vs_* recebem os logs para análise de todos os dados recebidos e os enviam a entidade destino (descrita no próprio nome do VS)
+        * Entidades vs_* recebem os logs para análise de todos os dados recebidos e os enviam a entidade destino (descrita no próprio nome do VS)
         * self_* mapeiam as interfaces de saída do F5
         * (IMPORTANTE) F5AFM não passa pelo VS, direto para caixa ativa do AvantData
         * (IMPORTANTE) Nos switches estão configurados encaminhamentos de flows para o vs_avantdata_prod (10.34.244.52), anteriormente associado vp2-seg-056. 
             * (IMPORTANTE) Essa encaminhamento deveria estar desativado?
 
 * **vp2-seg-005 (graylog) (10.34.229.105:517)**
-    * centralizador de logs do Windows, Apache, dentre outros
-    * enviava diversos tipos de logs para o AvantData
-    * ainda envia para o AvantData ?? *Perguntar ao Mike*
+    * Centralizador de logs do Windows, Apache, dentre outros
+    * Enviava diversos tipos de logs para o AvantData
+    * Ainda envia para o AvantData ?? *Perguntar ao Mike*
     * (IMPORTANTE) Checar índice e se envia
 
 * **vp1-seg-004 (EPO - Trellix) (10.34.229.42:518)**
@@ -101,8 +101,8 @@ Exemplo de nomenclatura:
     * EDR
 
 * **vp2-seg-036 (syslog) (10.34.229.185:514)**
-    * centralizador de diversos tipos de log
-    * envia diversos tipos de dados para o AvantData
+    * Centralizador de diversos tipos de log
+    * Envia diversos tipos de dados para o AvantData
     * (IMPORTANTE) Checar para qual índice
 
 ## Adicionais
