@@ -4,8 +4,8 @@ Nesta documentação constam as informações acerca da topologia lógica do amb
 <p align="center">
   <a href="#topologia">Topologia</a> •
   <a href="#nomenclatura">Nomenclatura das máquinas</a> •
-  <a href="#explicação das entidades">Explicação das entidades</a> •
-  <a href="#comentários gerais">Comentários gerais</a> •
+  <a href="#explicação">Explicação das entidades</a> •
+  <a href="#adicionais">Comentários gerais</a> •
 </p>
 
 ## Topologia
@@ -27,7 +27,7 @@ A nomenclatura dos sistemas no ambiente do cliente podem ser mapeadas a partir d
 Exemplo de nomenclatura:
 * vh2-seg-01 - Servidor virtual (v) de homologação (h) que está executando um sistema Linux e pertencete ao deparamento de segurança (seg) e tem numeração 01.
 
-## Explicação das entidades
+## Explicação
 
 ### Entidades relacionadas ao AvantData
 
@@ -105,7 +105,7 @@ Exemplo de nomenclatura:
     * envia diversos tipos de dados para o AvantData
     * (IMPORTANTE) Checar para qual índice
 
-## Informações adicionais
+## Adicionais
 
 * AvantAgent deveriam estar em todos os sistemas e servidores do ambiente. Atuam como uma agente do antivírus. Como se fosse filebeats.
     * Coletar diversos tipos de losgs no Windows e Linux (rede, comandos, dentre outros)
