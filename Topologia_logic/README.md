@@ -36,23 +36,23 @@ Exemplo de nomenclatura:
 
 * **pool_AvantData (cluster)**:
 
-    * **fp2-seg-001 (10.34.219.11)**
+    * **fp2-seg-001 (10.34.244.70)**
         * Contém os containers das aplicações 
             * AvantNode - ElasticSearch
             * AvantAPI  - API do AvantData
-            * AvantCore - ?
-            * AvantCache - ?
-            * AvantBase - ?
+            * AvantCore - Usa RabbitMQ modificado
+            * AvantCache - Servidor Redis
+            * AvantBase - Container PostGres
             * AvantBallance - Balanceador de carga (??)
             * AvantFS - Conteiner de comunicação com AvantFS (seg-060)
 
-    * **fp2-seg-002 (10.34.219.12)**
+    * **fp2-seg-002 (10.34.244.71)**
         * Similar ao seg-001
 
-    * **fp2-seg-003 (IP)**
+    * **fp2-seg-003 (10.34.219.17)**
         * NDR (aparentemente não funcional)
 
-    * **fp2-seg-004 (IP)**
+    * **fp2-seg-004 (10.34.219.18)**
         * NDR (aparentemente não funcional) (cluster com 003)
 
     * **vp2-seg-056**
@@ -69,6 +69,7 @@ Exemplo de nomenclatura:
 
 * **vp1-seg-19 (IP)**
     * Servidor do MP que armazena os backups da solução
+    * Sob nossa responsabilidade
 
 * **vp2-seg-033 (10.34.229.12)**
     * Máquina do Zabbix (4.4)
@@ -76,6 +77,7 @@ Exemplo de nomenclatura:
     * Recebe dos agentes via SNMPv2
     * Monitoramento do ambiente cliente e AvantData
     * Agentes passivos
+    * Community: d344ama4
     *  Atua como proxy e envia os dados recebidos por polling para o Zabbix-Server (172.20.0.6) no ambiente da Niva (Nome: Rússia)
         * Problema: incompatibildiade na versão do vh2-seg-01 e Zabbix-Server (Futuramente atualizar no MP)
 
