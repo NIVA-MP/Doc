@@ -82,6 +82,7 @@ Exemplo de nomenclatura:
         * Problema: incompatibildiade na versão do vh2-seg-01 e Zabbix-Server (Futuramente atualizar no MP)
 
 * **adc01 (10.34.239.101) e adc02 (10.34.239.102)**
+    * Problemas no F5 devem ser tratados na NIVA (Mike - Suporte)
     * Balanceadores de carga F5
     * Enviam os logs para o VS (VirtualServer) que envia para o AvantData
         * VS atua na borda entre o F5 e um servidor externo realizando análises de segurança nos dados enviados
