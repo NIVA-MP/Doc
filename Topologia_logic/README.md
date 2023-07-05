@@ -12,7 +12,7 @@ Nesta documentação constam as informações acerca da topologia lógica do amb
 
 A topologia pode ser observada no draft inicial da figura abaixo. Nela podemos observar a existência de diversas entidades que terão suas funcionalidades brevemente descritas neste documento. (Necessário adicionar máquinas do NDR no Cluster AvantData).
 
-![Topologia lógica](images/Topologia_AvantData.jpeg)
+![Topologia lógica](images/Topologia_AvantData.png)
 
 ## Nomenclatura
 
