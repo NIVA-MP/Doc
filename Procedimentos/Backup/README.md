@@ -33,7 +33,7 @@ Durante a confecção deste documento, foi constatado nos sistemas que hospedam 
 
 Para maiores detalhes sobre os parâmetros usados nesses comandos, favor analisar o documento [PDF](Doc_backup_info.pdf).
 
-### Permissões de acesso aos servidor NFS
+### Permissões de acesso aos servidores NFS
 
 * **VP1-SEG-019:** As permissões de leitura/escrita para a pasta vp1-seg-019:/bkp_op_avantdata são configuradas a partir de endereçamento, ou seja, caso novas máquinas sejam adicionadas ao cluster do AvantData é NECESSÁRIO adicionar as devidas permissões aos novos IPs para que essas entidades tenham acesso a pasta no VP1-SEG-019. Servidor sob nossa responsabilidade (enquanto não formalizar o acesso requisitar auxílio do time do MP para eventuais mudanças).
 
