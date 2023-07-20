@@ -67,7 +67,7 @@ Exemplo de nomenclatura:
     * Desativada por escaneamento interno de vuln do MP
     * Necessidade de realizar atualização do sistema (AvantSec)
 
-* **vp1-seg-19 (IP)**
+* **vp1-seg-19 (10.34.228.7)**
     * Servidor do MP que armazena os backups da solução
     * Sob nossa responsabilidade
 
