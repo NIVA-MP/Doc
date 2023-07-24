@@ -36,7 +36,7 @@ Exemplo de nomenclatura:
 
 * **pool_AvantData (cluster)**:
 
-    * **fp2-seg-001 (10.34.244.70)**
+    * **fp2-seg-001 (10.34.219.11) (VS: 10.34.244.70)**
         * Contém os containers das aplicações 
             * AvantNode - ElasticSearch
             * AvantAPI  - API do AvantData
@@ -46,7 +46,7 @@ Exemplo de nomenclatura:
             * AvantBallance - Balanceador de carga (??)
             * AvantFS - Conteiner de comunicação com AvantFS (seg-060)
 
-    * **fp2-seg-002 (10.34.244.71)**
+    * **fp2-seg-002 (10.34.219.12) (VS: 10.34.244.71)**
         * Similar ao seg-001
 
     * **fp2-seg-003 (10.34.219.17)**
@@ -67,7 +67,7 @@ Exemplo de nomenclatura:
     * Desativada por escaneamento interno de vuln do MP
     * Necessidade de realizar atualização do sistema (AvantSec)
 
-* **vp1-seg-19 (10.34.228.7)**
+* **vp1-seg-19 (10.34.228.7) (VS: 10.34.244.88)**
     * Servidor do MP que armazena os backups da solução
     * Sob nossa responsabilidade
 
